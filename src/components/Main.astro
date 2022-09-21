@@ -1,6 +1,8 @@
 ---
 import Principal from "./Principal.astro";
 import Icons from "./Icons.astro";
+import Title from "./Title.astro";
+import Subtitle from "./Subtitle.astro";
 import LiveBanner from "./LiveBanner.astro";
 
 const isLive = true;
@@ -8,13 +10,13 @@ const isLive = true;
 
 <Principal>
   <div class="flex flex-col items-center mt-24 mb-32">
-    <h1 class="text-9xl font-bold text-white my-5">Sin Palabras</h1>
-    <h2 class="text-2xl text-white"># La frecuencia que nos une</h2>
+    <Title />
+    <Subtitle />
     <div class="mt-24 mb-5 w-full flex flex-col">
       {isLive && <LiveBanner />}
       <iframe
         class="mx-auto"
-        width="60%"
+        width="95%"
         height="600"
         src="https://www.youtube.com/embed/maD9M0A4kuo"
         title="YouTube video player"
