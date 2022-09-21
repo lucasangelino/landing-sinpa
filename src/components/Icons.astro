@@ -739,7 +739,6 @@ m-490 -136 l135 -7 92 -45 c91 -46 171 -62 180 -37 2 6 -22 24 -54 40 l-58 29
     svgToAnimate.addEventListener(
       "animationend",
       () => {
-        console.log("removeed");
         svgToAnimate.classList.remove("animate-moving-background");
         svgToAnimate.removeAttribute("style");
         svgToAnimate.isAnimating = false;
