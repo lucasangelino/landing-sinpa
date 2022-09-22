@@ -3,53 +3,58 @@ import Youtube from "./icons/Youtube.astro";
 ---
 
 <section
-  class="bg-[#1A2C5E] min-h-screen flex flex-col items-center"
+  class="bg-[#1A2C5E] pb-40 flex flex-col items-center"
   style="clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);"
 >
-  <h4 class="text-6xl text-white mt-32">Programaci&oacuten</h4>
-  <div class="my-12 overflow-x-auto relative shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-center text-gray-500 dark:text-gray-400">
-      <thead
-        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-      >
-        <tr>
-          <th scope="col" class="py-3 px-6">Lunes</th>
-          <th scope="col" class="py-3 px-6">Martes</th>
-          <th scope="col" class="py-3 px-6">Mi&eacutercoles</th>
-          <th scope="col" class="py-3 px-6">Jueves</th>
-          <th scope="col" class="py-3 px-6">Viernes</th>
-          <th scope="col" class="py-3 px-6">S&aacutebado</th>
-          <th scope="col" class="py-3 px-6">Domingo</th>
+  <h4 class="text-6xl text-white lg:mt-32 md:mt-48">Programaci&oacuten</h4>
+  <div class="my-12 overflow-x-auto relative sm:rounded-lg">
+    <table class="table-auto text-sm text-center text-gray-500">
+      <thead class="text-xs text-white uppercase">
+        <tr class="">
+          <th
+            scope="col"
+            class="py-3 px-16 border-y border-gray-600 bg-gradient-to-r from-transparent to-gray-800"
+          ></th>
+          <th scope="col" class="py-3 px-6 border-y border-gray-600 bg-gray-800"
+            >Jueves</th
+          >
+          <th scope="col" class="py-3 px-6 border-y border-gray-600 bg-gray-800"
+            >Viernes</th
+          >
+          <th scope="col" class="py-3 px-6 border-y border-gray-600 bg-gray-800"
+            >S&aacutebado</th
+          >
+          <th scope="col" class="py-3 px-6 border-y border-gray-600 bg-gray-800"
+            >Domingo</th
+          >
+          <th
+            scope="col"
+            class="py-3 px-16 border-y border-gray-600 bg-gradient-to-r from-gray-800 to-transparent"
+          ></th>
         </tr>
       </thead>
       <tbody>
-        <tr
-          class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
-        >
-          <th
-            scope="row"
-            class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >
-          </th>
-          <td class="py-4 px-6"></td>
-          <td class="py-4 px-6"></td>
-          <td class="py-4 px-6"></td>
-          <td class="py-4 px-6"></td>
-          <td class="py-4 px-6 text-right">
-            <a
-              href="#"
-              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-            >
-              <div
-                class="border-2 p-8 rounded-md border-gray-500 flex flex-col justify-center text-md"
-              >
-                <span>Sabados 21:30</span>
-                <br />
-                <Youtube />
+        <tr>
+          <td class="py-4 px-6 bg-gradient-to-r from-transparent to-gray-800"
+          ></td>
+
+          <td class="py-4 px-6 bg-gray-800"></td>
+          <td class="py-4 px-6 bg-gray-800"></td>
+          <td class="py-4 px-6 text-righ bg-gray-800">
+            <a href="#" class="font-medium">
+              <div>
+                <div class="p-8 rounded-md flex flex-col items-center text-md">
+                  <span class="text-lg text-white">Sabados</span>
+                  <span class="text-2xl text-white">20:30</span>
+                  <br />
+                  <Youtube />
+                </div>
               </div>
             </a>
           </td>
-          <td class="py-4 px-6"></td>
+          <td class="py-4 px-6 bg-gray-800"></td>
+          <td class="py-4 px-6 bg-gradient-to-r from-gray-800 to-transparent"
+          ></td>
         </tr>
       </tbody>
     </table>
