@@ -3,34 +3,18 @@ import Principal from "./Principal.astro";
 import Icons from "./Icons.astro";
 import Title from "./Title.astro";
 import Subtitle from "./Subtitle.astro";
+import MainDesktop from "./MainDesktop.astro";
+import MainMobile from "./MainMobile.astro";
 import LiveBanner from "./LiveBanner.astro";
-
-const isLive = true;
 ---
 
 <Principal>
   <div class="flex flex-col items-center mt-24 mb-32">
     <Title />
     <Subtitle />
-    <div class="mt-24 mb-5 w-full flex flex-col">
-      {isLive && <LiveBanner />}
-      <iframe
-        class="mx-auto"
-        width="95%"
-        height="600"
-        src="https://www.youtube.com/embed/maD9M0A4kuo"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-      {
-        !isLive && (
-          <div class="flex flex-col items-left">
-            <h3 class="text-2xl text-white">Programa emitido</h3>
-          </div>
-        )
-      }
-    </div>
+    <LiveBanner />
+    <MainDesktop />
+    <!-- <MainMobile /> -->
   </div>
   <Icons />
 </Principal>
