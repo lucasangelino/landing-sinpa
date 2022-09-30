@@ -1,35 +1,12 @@
 ---
-const resp = await fetch(`http://www.youtube.com/watch?v={maD9M0A4kuo}`);
-// const data = resp.json();
-// console.log("data");
-
-const videos = ["https://www.youtube.com/embed/maD9M0A4kuo"];
 ---
 
 <section
-  class="bg-[#1A2C5E] flex flex-col items-center"
+  class="bg-[url('/youtubewave.svg')] bg-no-repeat bg-cover flex flex-col items-center min-h-screen"
   style="clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 100%);"
 >
   <h4 class="text-6xl text-white mt-32">Te lo perdiste?</h4>
-  <h3 class="text-2xl text-white m-12">
-    Podes mirar programas ya emitidos en nuestro canal de Youtube
-  </h3>
-
-  <h4 class="text-xl text-white my-2">Ultimos tres programas emitidos</h4>
-
-  {
-    videos.map((video) => (
-      <div class="flex flex-col my-8">
-        <iframe
-          width="600"
-          height="355"
-          src={video}
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
-      </div>
-    ))
-  }
+  <h4 class="text-2xl text-white mt-8">
+    Podes mirar programas anteriores en nuestro canal de Youtube
+  </h4>
 </section>
