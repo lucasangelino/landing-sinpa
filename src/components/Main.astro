@@ -13,11 +13,13 @@ import Live from "./Live.astro";
     <section>
       <div class="flex flex-row lg:flex-row md:flex-col justify-center">
         <div>
-          <h1 class="lg:text-8xl md:text-9xl text-gray-200 font-semibold p-2">
+          <h1
+            class="lg:text-8xl md:text-9xl text-gray-200 font-semibold p-2 md:my-3"
+          >
             Sin Palabras
           </h1>
           <h2
-            class="lg:text-4xl md:text-6xl text-gray-200 leading-loose font-semibold p-2"
+            class="lg:text-4xl md:text-6xl text-gray-200 leading-loose font-semibold p-2 md:my-3"
           >
             El programa de radio de los <br />
             <span class="text-[#eab308]"
@@ -25,7 +27,7 @@ import Live from "./Live.astro";
             </span>
             de Gaia
           </h2>
-          <p class="lg:text-xl md:text-4xl text-gray-200 py-4 px-2">
+          <p class="lg:text-xl md:text-5xl text-gray-200 py-4 px-2 md:my-5">
             Un programa de amigos para amigos
           </p>
           <a
@@ -41,35 +43,8 @@ import Live from "./Live.astro";
             </div>
           </a>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="flex justify-end">
-            <img
-              class="rounded-lg"
-              src="https://via.placeholder.com/150"
-              alt=""
-            />
-          </div>
-          <div class="flex justify-start">
-            <img
-              class="rounded-md object-scale-down"
-              src="https://via.placeholder.com/100"
-              alt=""
-            />
-          </div>
-          <div class="flex justify-start p-5">
-            <img
-              class="rounded-md object-scale-down"
-              src="https://via.placeholder.com/100"
-              alt=""
-            />
-          </div>
-          <div class="flex justify-start">
-            <img
-              class="rounded-md"
-              src="https://via.placeholder.com/150"
-              alt=""
-            />
-          </div>
+        <div class="flex justify-center">
+          <img src="assets/four-img.png" alt="" class="w-full" />
         </div>
       </div>
     </section>
