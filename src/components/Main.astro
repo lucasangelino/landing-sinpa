@@ -3,18 +3,70 @@ import Principal from "./Principal.astro";
 import Icons from "./Icons.astro";
 import Title from "./Title.astro";
 import Subtitle from "./Subtitle.astro";
-import MainDesktop from "./MainDesktop.astro";
-import MainMobile from "./MainMobile.astro";
-import LiveBanner from "./LiveBanner.astro";
+import Live from "./Live.astro";
 ---
 
 <Principal>
-  <div class="flex flex-col items-center mt-24 mb-32">
-    <Title />
-    <Subtitle />
-    <LiveBanner />
-    <MainDesktop />
-    <!-- <MainMobile /> -->
+  <div class="container flex justify-center items-center min-h-screen mx-auto">
+    <section>
+      <div class="flex flex-row md:flex-col justify-center">
+        <div>
+          <h1 class="text-8xl text-gray-200 font-semibold p-2">Sin Palabras</h1>
+          <h2 class="text-4xl text-gray-200 font-semibold p-2">
+            El programa de radio de los <br />
+            <span class="text-[#eab308]"
+              ><span class="uppercase">jovenes</span>
+            </span>
+            de Gaia
+          </h2>
+          <p class="text-gray-200 py-4 px-2">
+            Un programa de amigos para amigos
+          </p>
+          <a
+            class="inline-bock"
+            href="https://www.youtube.com/@juventudgaia/streams"
+            target="_blank"
+          >
+            <div class="flex flex-row w-52 py-3 px-2">
+              <div class="bg-gray-200 py-1 px-3 rounded-l-md">
+                Ver emisiones
+              </div>
+              <div class="py-1 px-3 rounded-r-md border-2 text-white">icon</div>
+            </div>
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex justify-end">
+            <img
+              class="rounded-lg"
+              src="https://via.placeholder.com/150"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-start">
+            <img
+              class="rounded-md object-scale-down"
+              src="https://via.placeholder.com/100"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-start p-5">
+            <img
+              class="rounded-md object-scale-down"
+              src="https://via.placeholder.com/100"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-start">
+            <img
+              class="rounded-md"
+              src="https://via.placeholder.com/150"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <Icons />
 </Principal>

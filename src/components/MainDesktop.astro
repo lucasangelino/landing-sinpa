@@ -1,14 +1,14 @@
 ---
+import Live from "./Live.astro";
+const isLive = true;
 ---
 
-<div class="hidden lg:block p-4 w-full">
-  <iframe
-    class="mx-auto"
-    width="75%"
-    height="600"
-    src="https://www.youtube.com/embed/maD9M0A4kuo"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-</div>
+{
+  isLive ? (
+    <Live />
+  ) : (
+    <div class="lg:block p-4 w-full">
+      <h4>aksdmaksdm</h4>
+    </div>
+  )
+}
