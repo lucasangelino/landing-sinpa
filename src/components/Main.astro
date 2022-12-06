@@ -7,19 +7,25 @@ import Live from "./Live.astro";
 ---
 
 <Principal>
-  <div class="container flex justify-center items-center min-h-screen mx-auto">
+  <div
+    class="container flex justify-center lg:items-center pt-32 min-h-screen mx-auto"
+  >
     <section>
-      <div class="flex flex-row md:flex-col justify-center">
+      <div class="flex flex-row lg:flex-row md:flex-col justify-center">
         <div>
-          <h1 class="text-8xl text-gray-200 font-semibold p-2">Sin Palabras</h1>
-          <h2 class="text-4xl text-gray-200 font-semibold p-2">
+          <h1 class="lg:text-8xl md:text-9xl text-gray-200 font-semibold p-2">
+            Sin Palabras
+          </h1>
+          <h2
+            class="lg:text-4xl md:text-6xl text-gray-200 leading-loose font-semibold p-2"
+          >
             El programa de radio de los <br />
             <span class="text-[#eab308]"
               ><span class="uppercase">jovenes</span>
             </span>
             de Gaia
           </h2>
-          <p class="text-gray-200 py-4 px-2">
+          <p class="lg:text-xl md:text-4xl text-gray-200 py-4 px-2">
             Un programa de amigos para amigos
           </p>
           <a
@@ -27,7 +33,7 @@ import Live from "./Live.astro";
             href="https://www.youtube.com/@juventudgaia/streams"
             target="_blank"
           >
-            <div class="flex flex-row w-52 py-3 px-2">
+            <div class="flex flex-row py-3 px-2">
               <div class="bg-gray-200 py-1 px-3 rounded-l-md">
                 Ver emisiones
               </div>
