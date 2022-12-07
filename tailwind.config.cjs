@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(#051d7a, #010824)",
+      },
       dropShadow: {
         "4xl": [
           "0px 0px 20px rgba(255, 221, 31, 0.75)",
